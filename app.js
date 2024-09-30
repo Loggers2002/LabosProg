@@ -260,9 +260,9 @@ app.get('/module/controle', function (req, res) {
     res.render('pages/controle.ejs', { module1: module1, module2: module2, module3: module3, module4: module4, module5: module5, module6: module6 });
 });
 
-// app.use(function(req, res) {
-//     res.writeHead(404);
-//     res.send("Page introuvable!");
-// });
+app.use(function(req, res) {
+    res.status(404);
+    res.send("Page introuvable!");
+});
 
 app.listen(8080);
