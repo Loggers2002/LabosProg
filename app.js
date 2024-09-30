@@ -32,7 +32,73 @@ client.subscribe('MODULE/#');
 
 client.on('message', function (topic, message) {
     console.log(topic.toString());
-    console.log(message.toString())
+    console.log(message.toString());
+    if (topic.startsWith('MODULE')) {
+        var moduleNb = topic.split('/')[1];
+        console.log(moduleNb);
+        switch (moduleNb) {
+            case '1':
+                if (message == 'on') {
+                    module1 = 1;
+                }
+                else if (message == 'off') {
+                    module1 = 0;
+                }
+                console.log(module1);
+                break;
+
+            case '2':
+                if (message == 'on') {
+                    module2 = 1;
+                }
+                else if (message == 'off') {
+                    module2 = 0;
+                }
+                console.log(module2);
+                break;
+
+            case '3':
+                if (message == 'on') {
+                    module3 = 1;
+                }
+                else if (message == 'off') {
+                    module3 = 0;
+                }
+                console.log(module3);
+                break;
+
+            case '4':
+                if (message == 'on') {
+                    module4 = 1;
+                }
+                else if (message == 'off') {
+                    module4 = 0;
+                }
+                console.log(module4);
+                break;
+
+            case '5':
+                if (message == 'on') {
+                    module5 = 1;
+                }
+                else if (message == 'off') {
+                    module5 = 0;
+                }
+                console.log(module5);
+                break;
+
+            case '6':
+                if (message == 'on') {
+                    module6 = 1;
+                }
+                else if (message == 'off') {
+                    module6 = 0;
+                }
+                console.log(module6);
+                break;
+        }
+
+    }
 });
 
 
