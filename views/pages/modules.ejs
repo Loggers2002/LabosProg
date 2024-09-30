@@ -1,0 +1,37 @@
+<!-- views/pages/modules.ejs -->
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+    <%- include('../partials/head') %>
+</head>
+
+<body class="container">
+
+    <header>
+        <%- include('../partials/header') %>
+    </header>
+
+    <main>
+        Module 
+        <% if(module > 0 && 7 > module) { %>
+            <%= module %> : 
+        <% } else { %>
+            inconnu
+        <% } %>
+        <p>
+            <% if(etat == true) { %>
+                <button class="btn btn-primary" style="background-color: green;">On</button>
+            <% } else { %>
+                <button class="btn btn-primary" style="background-color: red;">Off</button>
+            <% } %>
+        </p>
+    </main>
+
+    <footer>
+        <%- include('../partials/footer') %>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!-- views/pages/controle.ejs -->
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+    <%- include('../partials/head') %>
+</head>
+
+<body class="container">
+
+    <header>
+        <%- include('../partials/header') %>
+    </header>
+
+    <main>
+        <p>
+            <a href="/module/1">Module 1: </a>
+            <% if(module1 == true) { %>
+                <button class="btn btn-primary" style="background-color: green;">On</button>
+            <% } else { %>
+                <button class="btn btn-primary" style="background-color: red;">Off</button>
+            <% } %>
+        </p>
+        <p>
+            <a href="/module/2">Module 2: </a> 
+            <% if(module2 == true) { %>
+                <button class="btn btn-primary" style="background-color: green;">On</button>
+        <% } else { %>
+                <button class="btn btn-primary" style="background-color: red;">Off</button>
+        <% } %>
+        </p>
+        <p>
+            <a href="/module/3">Module 3: </a> 
+            <% if(module3 == true) { %>
+                <button class="btn btn-primary" style="background-color: green;">On</button>
+        <% } else { %>
+                <button class="btn btn-primary" style="background-color: red;">Off</button>
+        <% } %>
+        </p>
+        <p>
+            <a href="/module/4">Module 4: </a> 
+            <% if(module4 == true) { %>
+                <button class="btn btn-primary" style="background-color: green;">On</button>
+        <% } else { %>
+                <button class="btn btn-primary" style="background-color: red;">Off</button>
+        <% } %>
+        </p>
+        <p>
+            <a href="/module/5">Module 5: </a> 
+            <% if(module5 == true) { %>
+                <button class="btn btn-primary" style="background-color: green;">On</button>
+        <% } else { %>
+                <button class="btn btn-primary" style="background-color: red;">Off</button>
+        <% } %>
+        </p>
+        <p>
+            <a href="/module/6">Module 6: </a> 
+            <% if(module6 == true) { %>
+                <button class="btn btn-primary" style="background-color: green;">On</button>
+            <% } else { %>
+                <button class="btn btn-primary" style="background-color: red;">Off</button>
+            <% } %>
+        </p>
+    </main>
+
+    <footer>
+        <%- include('../partials/footer') %>
+    </footer>
+
+</body>
+
+</html>
